@@ -12,7 +12,7 @@ Responzívny dizajn + prispôsobenie stránky pre tlač pomocou CSS.
 **2. Trojúrovňové menu. Menu bude dynamicky generované na základe údajov, ktoré budú vložené v poli.**
 
 **3. Zobrazenie aktuálneho dátumu s meninami v daný deň. Súčasťou bude obojsmerné zisťovanie priradenia dátumu a mena.**
-T.j. po zadaní dátumu sa vypíše, kto má v daný deň meniny a po zadaní mena sa vypíše, kedy má takáto osoba meniny. 
+* T.j. po zadaní dátumu sa vypíše, kto má v daný deň meniny a po zadaní mena sa vypíše, kedy má takáto osoba meniny. 
 Pri zadávaní dátumu je potrebné zisťovať aj to, či jedátum zmysluplný. Pri zlom zadaní dátumu sa nápoveda správnej 
 syntaxe realizuje pomocou tooltipu. Predpokladá sa, ze dátum sa bude dať zadať v tvare 31.3., t.j. nielen v tvare 31.03.
 Zoznam mien bude dodaný vo vhodnom formáte. Pri zadávaní mena do formuláru sa bude dať
