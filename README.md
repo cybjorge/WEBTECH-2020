@@ -7,7 +7,7 @@ Final project of the Webtech course fall 2020.
 ## Whole assignment in slovak language 
 
 **1. Návrh grafického dizajnu pomocou CSS len v externom súbore.**
-Responzívny dizajn + prispôsobenie stránky pre tlač pomocou CSS.
+* Responzívny dizajn + prispôsobenie stránky pre tlač pomocou CSS.
 
 **2. Trojúrovňové menu. Menu bude dynamicky generované na základe údajov, ktoré budú vložené v poli.**
 
