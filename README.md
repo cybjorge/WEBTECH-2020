@@ -4,7 +4,7 @@ Final project of the Webtech course fall 2020.
 //TODO
 
 
-## Whole assignment in slovak language##
+## Whole assignment in slovak language 
 
 1. Návrh grafického dizajnu pomocou CSS len v externom súbore.
 Responzívny dizajn + prispôsobenie stránky pre tlač pomocou CSS.
