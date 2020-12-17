@@ -49,6 +49,8 @@ zapracované do vytvorenej web stránky, inak budú strhnuté body.**
 - [ ] **Nameday** 
 - [ ] **Visitor counter**
 
+## Division of tasks ##
+*17/12/2020*
 
 
 
