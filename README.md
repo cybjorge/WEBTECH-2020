@@ -42,6 +42,10 @@ zapracované do vytvorenej web stránky, inak budú strhnuté body.**
 ### Division of tasks ###
 *17/12/2020*
 
+Bali| Duško| Kandy| Smeťo| 
+| :---: | :---: | :---:|:---:
+/////  | /////  | ///// | ///// 
+
 ### //TO DO LIST ###
 - [ ] **index.html**
 - [ ] **Game** ***Bali***
