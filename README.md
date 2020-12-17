@@ -38,16 +38,16 @@ zapracované do vytvorenej web stránky, inak budú strhnuté body.**
   * Hra musí byť hrateľná aj na smartfóne (pozor na drag and drop).
 
 ## //TO DO LIST ##
-- [ ] index.html
-- [ ] Game *Bali*
-- [ ] Game *Duško*
-- [ ] Game *Kandy*
-- [ ] Game *Smeťo*
-- [ ] Breadcrumbs
-- [ ] Menu
-- [ ] Responsive design
-- [ ] Nameday 
-- [ ] Visitor counter
+- [ ] **index.html**
+- [ ] **Game** *Bali*
+- [ ] **Game** *Duško*
+- [ ] **Game** *Kandy*
+- [ ] **Game** *Smeťo*
+- [ ] **Breadcrumbs**
+- [ ] **Menu**
+- [ ] **Responsive design**
+- [ ] **Nameday** 
+- [ ] **Visitor counter**
 
 
 
