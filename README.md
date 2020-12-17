@@ -38,6 +38,10 @@ zapracované do vytvorenej web stránky, inak budú strhnuté body.**
   * Hra musí byť hrateľná aj na smartfóne (pozor na drag and drop).
 
 ## //TO DO LIST ##
+
+### Division of tasks ###
+*17/12/2020*
+
 - [ ] **index.html**
 - [ ] **Game** ***Bali***
 - [ ] **Game** ***Duško***
@@ -49,8 +53,7 @@ zapracované do vytvorenej web stránky, inak budú strhnuté body.**
 - [ ] **Nameday** 
 - [ ] **Visitor counter**
 
-## Division of tasks ##
-*17/12/2020*
+
 
 
 
