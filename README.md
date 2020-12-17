@@ -40,11 +40,10 @@ zapracované do vytvorenej web stránky, inak budú strhnuté body.**
 ## Tasks ##
 
 ### Division of tasks ###
-*17/12/2020*
 
 Bali| Duško| Kandy| Smeťo| 
 | :---: | :---: | :---:|:---:
-/////  | /////  | ///// | ///// 
+index.html  | Menu  | Responsive design | Breadcrumbs 
 
 ### //TO DO LIST ###
 - [ ] **index.html**
