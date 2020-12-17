@@ -39,10 +39,10 @@ zapracované do vytvorenej web stránky, inak budú strhnuté body.**
 
 ## //TO DO LIST ##
 - [ ] **index.html**
-- [ ] **Game** *Bali*
-- [ ] **Game** *Duško*
-- [ ] **Game** *Kandy*
-- [ ] **Game** *Smeťo*
+- [ ] **Game** ***Bali***
+- [ ] **Game** ***Duško***
+- [ ] **Game** ***Kandy***
+- [ ] **Game** ***Smeťo***
 - [ ] **Breadcrumbs**
 - [ ] **Menu**
 - [ ] **Responsive design**
