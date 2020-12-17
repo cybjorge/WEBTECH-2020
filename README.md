@@ -37,4 +37,23 @@ zapracované do vytvorenej web stránky, inak budú strhnuté body.**
   * Pri každej hre musí byť identifikovateľné, kto danú hru vytvoril.
   * Hra musí byť hrateľná aj na smartfóne (pozor na drag and drop).
 
+## //TO DO LIST ##
+- [ ] index.html
+- [ ] Game *Bali
+- [ ] Game *Duško
+- [ ] Game *Kandy
+- [ ] Game *Smeťo
+- [ ] Breadcrumbs
+- [ ] Menu
+- [ ] Responsive design
+- [ ] Nameday 
+- [ ] Visitor counter
+
+
+
+
+
+
+
+
 
