@@ -32,7 +32,7 @@ zapracované do vytvorenej web stránky, inak budú strhnuté body.**
   * V každej hre bude potrebné skladať nejaký objekt podľa vlastného výberu z 8-12 nepravidelných častí. Keďže časti sú nepravidelné, tak pozadie každej časti bude priesvitné.
   * Hra musí byť „ukončiteľná“, t.j. po poskladaní obrázku sa zobrazí oznam, že hra je skončená.
   * Na stránke sa na viditeľnom mieste sa bude zobrazovať čas, ktorý uplynul od začatia hrania danej hry. Čas prestane plynúť v momente, ako hra skončí, ale zostane zobrazený až do opätovného hratia hry.
-  * Súčasťou web stránky musí bude aj tlačidlo „Demo“, po ktorého stlačení sa zobrazí animáciailustrujúca ako je možné posytupne celý obrázok poskladať.
+  * Súčasťou web stránky musí bude aj tlačidlo „Demo“, po ktorého stlačení sa zobrazí animácia ilustrujúca ako je možné posytupne celý obrázok poskladať.
   * Pri skladaní obrázku je možné využívať z-index (nie je to nevyhnutné).
   * Pri každej hre musí byť identifikovateľné, kto danú hru vytvoril.
   * Hra musí byť hrateľná aj na smartfóne (pozor na drag and drop).
