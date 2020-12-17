@@ -37,11 +37,12 @@ zapracované do vytvorenej web stránky, inak budú strhnuté body.**
   * Pri každej hre musí byť identifikovateľné, kto danú hru vytvoril.
   * Hra musí byť hrateľná aj na smartfóne (pozor na drag and drop).
 
-## //TO DO LIST ##
+##Tasks##
 
 ### Division of tasks ###
 *17/12/2020*
 
+### //TO DO LIST ###
 - [ ] **index.html**
 - [ ] **Game** ***Bali***
 - [ ] **Game** ***Duško***
