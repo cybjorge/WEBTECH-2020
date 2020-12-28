@@ -10,36 +10,10 @@
         <title>pojebte sa</title>
     </head>
     <body onload="todaysDate(),getXML()">
-        <div id="body_head" >
-            body_head bude obsahovat menu, breadcrumbs, osobne navstevy
-            navrhujem aby bolo na kazdej stranke toto rovnake, cize cele toto body head aj s JS si nakopirovat do podstranok
-            <div id="today"></div>
-            <hr>
-            <div id="menu">
-                tu bude menu, to sa musi vvraj tahat z nejakeho xml aelbo json
-                <hr>
-                <div id="breadcrumbs">
-                    
-                    toto by mohlo byt relativne ok, nejak sa len bude vypisovat z toho menu cely path
-                </div>
-            </div>
-            <hr>
-            <div id="cookie_visit">
-                osobne navstevy, najlepsie keby to bolo v jednom riadku s menu, mozno to pojde do head
-            </div>
-        </div>
+        <component-one></component-one>
       
-        <div id="nameday_section">
-            <div id="nameday_searchbox">
-                <input type="text" placeholder="meno alebo datum a fuck you...." name="search">
-                <div id="output">
-                    obsah tohoto sa bude prepinat, cize ak prazny, ukaze sa len dnesny datum napr
-                    <div id="input_date"></div>
-                    <div id="sk_nameday"></div>
-
-                </div>
-            </div>
-        </div>
+        <component-three></component-three>
+        
 
     </body>
 </html>

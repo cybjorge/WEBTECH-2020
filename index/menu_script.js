@@ -1,5 +1,36 @@
-//
+//komponenty
+class MyComponentOne extends HTMLElement{
+    constructor() {
+        // Always call super first in constructor
+        super();
+    }
+    connectedCallback(){
+        this.innerHTML='<div id="body_head"> <div id="breadcrumbs"></div><div id="today"></div> <hr> <div id="menu"><hr><component-two></component-two> </div></div>;'
+    }
+}
+class MyComponentTwo extends HTMLElement{
+    constructor() {
+        // Always call super first in constructor
+        super();
+    }
+    connectedCallback(){
+        this.innerHTML='<div id="cookie_visit">osobne navstevy, najlepsie keby to bolo v jednom riadku s menu, mozno to pojde do head</div>'
+    }
 
+}
+class MyComponentThree extends HTMLElement{
+    constructor() {
+        // Always call super first in constructor
+        super();
+    }
+    connectedCallback(){
+        this.innerHTML='<div id="nameday_section"><div id="nameday_searchbox"><input type="text" placeholder="meno alebo datum a fuck you...." name="search"><div id="output">obsah tohoto sa bude prepinat, cize ak prazny, ukaze sa len dnesny datum napr<div id="input_date"></div><div id="sk_nameday"></div></div></div></div>'
+    }
+
+}
+customElements.define('component-one', MyComponentOne);
+customElements.define('component-two', MyComponentTwo);
+customElements.define('component-three', MyComponentThree);
 //cookies, dnesny datum, etc
 $(document).ready(function(){
     const menu = {
@@ -102,3 +133,4 @@ function todaysDate(){
     today = dd + '/' + mm + '/' + yyyy;
     document.getElementById('today').innerHTML=today;
 }
+
