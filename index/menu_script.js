@@ -5,7 +5,7 @@ $(document).ready(function(){
     const menu = {
         "Pages": [
             //prva uroven
-          { "PageId": 1, "PageTitle": "Home",       "ParentMenu": null, "PageURL":"/"},
+          { "PageId": 1, "PageTitle": "Home",       "ParentMenu": null, "PageURL":"index.html"},
             //druha uroven
           { "PageId": 2, "PageTitle": "About",      "ParentMenu": "Home", "PageURL":"http://pornhub.com"},
             //tretia uroven
@@ -55,9 +55,42 @@ $(document).ready(function(){
       app.appendChild(
         createMenu(menu.Pages, null)
       )
-      console.log(app.innerHTML)
+     // console.log(app.innerHTML)
+     breadCrumb(menu.Pages);
 })
+function breadCrumb(menu){
+    var breadArr=[];
+    
+    var href = document.location.href;
+    var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
+    var lookingFor=lastPathSegment;
+    if(lookingFor==menu[0].PageURL){}
+    else{
+        for (var i=0;i<menu.length;i++){
+            if(lookingFor==menu[0].PageTitle){
+                breadArr.push(menu[0]);
+                break;
+            }
+            if (menu[i].PageURL==lookingFor || menu[i].PageTitle==lookingFor){
+                console.log(lookingFor)
+                breadArr.push(menu[i]);
+                console.log(menu[i].ParentMenu)
+                lookingFor=menu[i].ParentMenu;
+                i=0;
+            }
 
+            console.log(breadArr);
+        }
+    }
+    for(var j=breadArr.length-1;j>=0;j--){
+        var crumb=document.createElement('a');
+        crumb.setAttribute('href',breadArr[j].PageURL);
+        crumb.appendChild(document.createTextNode(breadArr[j].PageTitle));
+        document.getElementById("breadcrumbs").appendChild(crumb);
+
+    }
+
+}
 
 
 function todaysDate(){
