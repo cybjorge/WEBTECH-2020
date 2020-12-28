@@ -58,22 +58,6 @@ $(document).ready(function(){
       console.log(app.innerHTML)
 })
 
-$(document).ready(function () {
-    $.parseXML("resources/meniny.xml", function (data) {
-        var arrItems = [];
-        arrItems=data.photos;
-
-        var cookis=getCookie("cookieArray")
-
-        arr=arrItems;
-        console.log(cookis);
-        if (cookis == ""){
-            createGallery(arrItems);
-        }
-
-
-    });
-});
 
 
 function todaysDate(){
