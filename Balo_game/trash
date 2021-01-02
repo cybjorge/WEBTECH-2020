@@ -1,0 +1,82 @@
+ <div id="game">
+                <div id="board">
+                    
+                    <div id="1" class="fieldA field ui-droppable">
+                       <img src="images/1.png" alt="ciapka" style="visibility: hidden;">
+                    </div>
+                    <div  id="2" class="fieldB field ui-droppable">
+                        <img src="images/2.png" alt="tvar12" style="visibility: hidden;">
+                    </div>
+                    <div id="3" class="field fieldC ui-droppable">
+                        <img  src="images/3.png" alt="tvar22" style="visibility: hidden;">
+                    </div>
+                    <div id="4" class="fieldD field ui-droppable">
+                        <img src="images/4.png" style="visibility: hidden;">
+                    </div>
+                    <div  id="5" class="fieldE field ui-droppable">
+                        <img src="images/5.png" style="visibility: hidden;">
+                    </div>
+                    <div id="6" class="fieldF field ui-droppable">
+                        <img src="images/6.png" style="visibility: hidden;">
+                    </div>
+                    <div id="7" class="fieldG field ui-droppable">
+                        <img src="images/7.png"  style="visibility: hidden;">
+                    </div>
+                    <div id="8" class="fieldH field ui-droppable">
+                        <img src="images/8.png" style="visibility: hidden;">
+                    </div>
+                    <img src="images/PD.png" id="" >
+                </div>
+                
+                <div class="doplnky">
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/1.png" id="ID1" alt="ciapka" class="ui-draggable">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/2.png" id="ID2" alt="ciapka"  class="ui-draggable" style="z-index: 2;top: 0;left: 5;">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/3.png" id="ID3" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/4.png" id="ID4" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/5.png" id="ID5" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/6.png" id="ID6" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/7.png" id="ID7" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;"> 
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/8.png" id="ID8" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;">
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            

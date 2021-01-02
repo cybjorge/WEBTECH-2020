@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+         
+        <script src="easytimer.js/dist/easytimer.js"></script>     
+        <link rel="stylesheet" href="gamepage.css">
+        
+        <title>Cyberwhat 2077</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>  
+    </head>
+    <body> 
+        <div id="end"></div>
+
+        <h1>Pomôž developerom dokončiť Cyberpunk 2077!</h1>
+        
+
+        <div id="contentbox">
+
+            <div id="game">
+                <div id="bttns">
+                    <button class="cybr-btn" id="animation" onclick="demo()">
+                        Demo<span aria-hidden>_</span>
+                        <span aria-hidden class="cybr-btn__glitch">Demo</span>
+                    </button>
+                    <button class="cybr-btn" onclick="resetAll()">
+                        Reset<span aria-hidden>_</span>
+                        <span aria-hidden class="cybr-btn__glitch">Reset</span>
+                    </button>
+                    
+                </div>
+                
+                ​<div id="timer">00:00:00</div>
+                <div id="board">
+                    
+                    <div id="1" class="fieldA field ui-droppable">
+                       <img src="images/1.png" alt="ciapka" style="visibility: hidden;">
+                    </div>
+                    <div  id="2" class="fieldB field ui-droppable">
+                        <img src="images/2.png" alt="tvar12" style="visibility: hidden;">
+                    </div>
+                    <div id="3" class="field fieldC ui-droppable">
+                        <img  src="images/3.png" alt="tvar22" style="visibility: hidden;">
+                    </div>
+                    <div id="4" class="fieldD field ui-droppable">
+                        <img src="images/4.png" style="visibility: hidden;">
+                    </div>
+                    <div  id="5" class="fieldE field ui-droppable">
+                        <img src="images/5.png" style="visibility: hidden;">
+                    </div>
+                    <div id="6" class="fieldF field ui-droppable">
+                        <img src="images/6.png" style="visibility: hidden;">
+                    </div>
+                    <div id="7" class="fieldG field ui-droppable">
+                        <img src="images/7.png"  style="visibility: hidden;">
+                    </div>
+                    <div id="8" class="fieldH field ui-droppable">
+                        <img src="images/8.png" style="visibility: hidden;">
+                    </div>
+                    <img src="images/PD.png" id="" >
+                </div>
+                
+                <div class="doplnky">
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/1.png" id="ID1" alt="ciapka" class="ui-draggable">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/2.png" id="ID2" alt="ciapka"  class="ui-draggable" style="z-index: 2;top: 0;left: 5;">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/3.png" id="ID3" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/4.png" id="ID4" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/5.png" id="ID5" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/6.png" id="ID6" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;">
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/7.png" id="ID7" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;"> 
+        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="column">
+                            <img src="images/8.png" id="ID8" alt="ciapka"  class="ui-draggable" style="z-index: 2; position: relative;">
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+       
+                
+        </div>
+        
+        <script src="gamescript.js"></script>
+        <footer>
+           <small>SB 2020</small> 
+        </footer>
