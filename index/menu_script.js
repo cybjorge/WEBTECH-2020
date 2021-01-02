@@ -6,7 +6,7 @@ class MyComponentOne extends HTMLElement{
         super();
     }
     connectedCallback(){
-        this.innerHTML='<div id="body_head"> <div id="breadcrumbs"></div><div id="today"></div> <hr> <div id="menu"><hr><component-two></component-two> </div></div>'
+        this.innerHTML='<div id="body_head"> <div id="breadcrumbs"></div><div id="today"></div> <hr> <div id="menu"><hr><counter-component></counter-component> </div></div>'
         document.getElementById("breadcrumbs").innerHTML=document.title;
       }
 
@@ -32,9 +32,9 @@ class MyComponentThree extends HTMLElement{
     }
 
 }
-customElements.define('component-one', MyComponentOne);
-customElements.define('component-two', MyComponentTwo);
-customElements.define('component-three', MyComponentThree);
+customElements.define('menu-component', MyComponentOne);
+customElements.define('counter-component', MyComponentTwo);
+customElements.define('meniny-komponent', MyComponentThree);
 
 //crumbs
 $(document).ready(function(){
@@ -42,16 +42,20 @@ $(document).ready(function(){
         "Pages": [
             //prva uroven
           { "PageId": 1, "PageTitle": "Home",       "ParentMenu": null, "PageURL":"../index/index.html"},
+          //druha uroven
+          { "PageId": 2, "PageTitle": "Checklist",  "ParentMenu": null },
             //druha uroven
-          { "PageId": 2, "PageTitle": "Martin",      "ParentMenu": "Home", "PageURL":"../about/about_smeto.html" },
-          { "PageId": 3, "PageTitle": "Matus",    "ParentMenu": "Home" },
-          { "PageId": 4, "PageTitle": "Dusan",  "ParentMenu": "Home" },
-          { "PageId": 5, "PageTitle": "Samo", "ParentMenu": "Home" , "PageURL":"../about/about_balo.html" },
+          { "PageId": 3, "PageTitle": "ONAS",  "ParentMenu": null },
+          
+          { "PageId": 4, "PageTitle": "Martin",      "ParentMenu": "ONAS", "PageURL":"../about/about_smeto.html" },
+          { "PageId": 5, "PageTitle": "Matus",    "ParentMenu": "ONAS" },
+          { "PageId": 6, "PageTitle": "Dusan",  "ParentMenu": "ONAS" },
+          { "PageId": 7, "PageTitle": "Samo", "ParentMenu": "ONAS" , "PageURL":"../about/about_balo.html" },
             //tretia uroven
-          { "PageId": 6, "PageTitle": "Martinova hra",      "ParentMenu": "Martin", "PageURL":"../Smeto_game/smeto_game.html" },
-          { "PageId": 7, "PageTitle": "Matusova hra",    "ParentMenu": "Matus" },
-          { "PageId": 8, "PageTitle": "Dusanova hra",  "ParentMenu": "Dusan" },
-          { "PageId": 9, "PageTitle": "Samova hra", "ParentMenu": "Samo" , "PageURL":"../Balo_game/index.html" },
+          { "PageId": 8, "PageTitle": "Martinova hra",      "ParentMenu": "Martin", "PageURL":"../Smeto_game/smeto_game.html" },
+          { "PageId": 9, "PageTitle": "Matusova hra",    "ParentMenu": "Matus" },
+          { "PageId": 10, "PageTitle": "Dusanova hra",  "ParentMenu": "Dusan" },
+          { "PageId": 11, "PageTitle": "Samova hra", "ParentMenu": "Samo" , "PageURL":"../Balo_game/index.html" },
         ]
       }
       
