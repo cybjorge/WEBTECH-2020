@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../index/menu_script.js"></script>
+
+        <link rel="stylesheet" href="css/balo_style.css">
+        <!--tu pojde este css pre menu-->
+        <title>Baloslav</title>
+    </head>
+    <body>
+        <component-one></component-one>
+        <h1>O mne</h1>
+        <hr> 
+        <div id="content">
+            <article id="zaciatok">
+                <header>
+                    <h2>Kto som?</h2>
+                </header>
+                
+                <img src="../about/picme2.jpg"  alt="Ja" id="jafotka">
+                <p>Volám sa Samuel Balaščík, som študentom Fakulty elektrotechniky a informatiky Slovenskej Technickej Univerzity. 
+                    Pochádzam z dediny Pečovská Nová Ves, situovanej vo východnej časti Slovenka, 25 kilometrov od krajského mesta Prešov. 
+                    Môj život sa, podobne ako všetky ostatné, začal narodením. Som známy svojím situačným ostrovtipom a vyhľadávaním ironických momentov.</p>
+                
+                
+                <p>Jena z vecí, ktoré sa mi vryli do pamäte, je veta, ktorú raz kedysi vyslovil môj kamarát:"Načo byť v pohode?"</p>
+                <div class="borderbox"><aside><q>Načo byť v pohode?</q></aside></div>
+                <p>Tento citát, akokoľvek motivačne môže pôsobiť, vznikol pri objednávaní (pravdepodobne) siedmeho piva, ako odpoveď na otázku: "Myslíš, že budeš v pohode?",
+                    no myslím, že keby sa niekto posnažil, našiel by aj hlbší význam uplatniteľný pre čokoľvek.</p>
+            </article>
+            <article id="ine">
+                <h3>Všetko čo má Samo rád</h3>
+                <p>Obľubujem šport, filmy, seriály, počítačové hry, čítanie a dobré jedlo tak, ako asi každý človek v mojom veku.</p>
+            </article>
+            <div id="gamelink">
+                <div id="bttns">
+                    <button class="cybr-btn" id="animation">
+                        <a href="../Balo_game/index.html">
+                            Hra<span aria-hidden>_</span>
+                            <span aria-hidden class="cybr-btn__glitch">Hra</span>
+                        </a>
+                        
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <p>Copyright 2020</p>
+        </footer>
+        <script src="../demos/breadcrumbs/js.js"></script>
+        <script src="../demos/visit_counter/js.js"></script>
+        <script>breadInit();breadcrumbs();</script>
+        <script>visitorCounterInit();</script>
+        <script>window.onload = function (event) {
+            console.log("here!");
+            localStorage.setItem("before","true");
+        }
+        </script>
+    </body>
+
+</html>
