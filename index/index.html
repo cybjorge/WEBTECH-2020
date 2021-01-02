@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head >
         <meta charset="UTF-8">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
         <script src="menu_script.js"></script>
-        <title>pojebte sa</title>
+
+
+        <title>Domov</title>
     </head>
-    <body onload="todaysDate(),getXML()">
+    <body onload="todaysDate()">
+        <h1>DRUHA STRANKA</h1>
         <component-one></component-one>
       
         <component-three></component-three>
         
-
+        <script src="../demos/breadcrumbs/js.js"></script>
+        <script src="../demos/visit_counter/js.js"></script>
+        <script>breadInit();breadcrumbs();</script>
+        <script>visitorCounterInit();</script>
+        <script>window.onload = function (event) {
+            console.log("here!");
+            localStorage.setItem("before","true");
+        }
+        </script>
     </body>
 </html>

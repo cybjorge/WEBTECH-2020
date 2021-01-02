@@ -1,12 +1,15 @@
 //komponenty
+//
 class MyComponentOne extends HTMLElement{
     constructor() {
         // Always call super first in constructor
         super();
     }
     connectedCallback(){
-        this.innerHTML='<div id="body_head"> <div id="breadcrumbs"></div><div id="today"></div> <hr> <div id="menu"><hr><component-two></component-two> </div></div>;'
-    }
+        this.innerHTML='<div id="body_head"> <div id="breadcrumbs"></div><div id="today"></div> <hr> <div id="menu"><hr><component-two></component-two> </div></div>'
+        document.getElementById("breadcrumbs").innerHTML=document.title;
+      }
+
 }
 class MyComponentTwo extends HTMLElement{
     constructor() {
@@ -14,7 +17,7 @@ class MyComponentTwo extends HTMLElement{
         super();
     }
     connectedCallback(){
-        this.innerHTML='<div id="cookie_visit">osobne navstevy, najlepsie keby to bolo v jednom riadku s menu, mozno to pojde do head</div>'
+        this.innerHTML='<div id="counter"></div>'
     }
 
 }
@@ -24,6 +27,7 @@ class MyComponentThree extends HTMLElement{
         super();
     }
     connectedCallback(){
+        
         this.innerHTML='<div id="nameday_section"><div id="nameday_searchbox"><input type="text" placeholder="meno alebo datum a fuck you...." name="search"><div id="output">obsah tohoto sa bude prepinat, cize ak prazny, ukaze sa len dnesny datum napr<div id="input_date"></div><div id="sk_nameday"></div></div></div></div>'
     }
 
@@ -31,24 +35,23 @@ class MyComponentThree extends HTMLElement{
 customElements.define('component-one', MyComponentOne);
 customElements.define('component-two', MyComponentTwo);
 customElements.define('component-three', MyComponentThree);
-//cookies, dnesny datum, etc
+
+//crumbs
 $(document).ready(function(){
     const menu = {
         "Pages": [
             //prva uroven
-          { "PageId": 1, "PageTitle": "Home",       "ParentMenu": null, "PageURL":"index.html"},
+          { "PageId": 1, "PageTitle": "Home",       "ParentMenu": null, "PageURL":"../index/index.html"},
             //druha uroven
-          { "PageId": 2, "PageTitle": "About",      "ParentMenu": "Home", "PageURL":"http://pornhub.com"},
+          { "PageId": 2, "PageTitle": "Martin",      "ParentMenu": "Home", "PageURL":"../about/about_smeto.html" },
+          { "PageId": 3, "PageTitle": "Matus",    "ParentMenu": "Home" },
+          { "PageId": 4, "PageTitle": "Dusan",  "ParentMenu": "Home" },
+          { "PageId": 5, "PageTitle": "Samo", "ParentMenu": "Home" , "PageURL":"../about/about_balo.html" },
             //tretia uroven
-          { "PageId": 3, "PageTitle": "Martin",      "ParentMenu": "About", "PageURL":"nigga.html" },
-          { "PageId": 4, "PageTitle": "Matus",    "ParentMenu": "About" },
-          { "PageId": 5, "PageTitle": "Dusan",  "ParentMenu": "About" },
-          { "PageId": 6, "PageTitle": "Samo", "ParentMenu": "About" },
-            //stvrta uroven
-          { "PageId": 7, "PageTitle": "Martinova hra",      "ParentMenu": "Martin" },
-          { "PageId": 8, "PageTitle": "Matusova hra",    "ParentMenu": "Matus" },
-          { "PageId": 9, "PageTitle": "Dusanova hra",  "ParentMenu": "Dusan" },
-          { "PageId": 10, "PageTitle": "Samova hra", "ParentMenu": "Samo" },
+          { "PageId": 6, "PageTitle": "Martinova hra",      "ParentMenu": "Martin", "PageURL":"../Smeto_game/smeto_game.html" },
+          { "PageId": 7, "PageTitle": "Matusova hra",    "ParentMenu": "Matus" },
+          { "PageId": 8, "PageTitle": "Dusanova hra",  "ParentMenu": "Dusan" },
+          { "PageId": 9, "PageTitle": "Samova hra", "ParentMenu": "Samo" , "PageURL":"../Balo_game/index.html" },
         ]
       }
       
@@ -86,43 +89,8 @@ $(document).ready(function(){
       app.appendChild(
         createMenu(menu.Pages, null)
       )
-     // console.log(app.innerHTML)
-     breadCrumb(menu.Pages);
+     
 })
-function breadCrumb(menu){
-    var breadArr=[];
-    
-    var href = document.location.href;
-    var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
-    var lookingFor=lastPathSegment;
-    if(lookingFor==menu[0].PageURL){}
-    else{
-        for (var i=0;i<menu.length;i++){
-            if(lookingFor==menu[0].PageTitle){
-                breadArr.push(menu[0]);
-                break;
-            }
-            if (menu[i].PageURL==lookingFor || menu[i].PageTitle==lookingFor){
-                console.log(lookingFor)
-                breadArr.push(menu[i]);
-                console.log(menu[i].ParentMenu)
-                lookingFor=menu[i].ParentMenu;
-                i=0;
-            }
-
-            console.log(breadArr);
-        }
-    }
-    for(var j=breadArr.length-1;j>=0;j--){
-        var crumb=document.createElement('a');
-        crumb.setAttribute('href',breadArr[j].PageURL);
-        crumb.appendChild(document.createTextNode(breadArr[j].PageTitle));
-        document.getElementById("breadcrumbs").appendChild(crumb);
-
-    }
-
-}
-
 
 function todaysDate(){
     var today = new Date();
@@ -133,4 +101,3 @@ function todaysDate(){
     today = dd + '/' + mm + '/' + yyyy;
     document.getElementById('today').innerHTML=today;
 }
-
